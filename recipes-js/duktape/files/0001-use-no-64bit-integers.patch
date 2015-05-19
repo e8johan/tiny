@@ -1,0 +1,21 @@
+Binary files duktape-1.2.1.orig/duk and duktape-1.2.1/duk differ
+diff -rupN duktape-1.2.1.orig/src/duktape.h duktape-1.2.1/src/duktape.h
+--- duktape-1.2.1.orig/src/duktape.h	2015-04-07 23:02:51.000000000 +0200
++++ duktape-1.2.1/src/duktape.h	2015-05-19 16:40:39.402547204 +0200
+@@ -1251,15 +1251,8 @@ typedef double duk_double_t;
+  *  Check whether we should use 64-bit integers
+  */
+ 
+-/* Quite incomplete now.  Use 64-bit types if detected (C99 or other detection)
+- * unless they are known to be unreliable.  For instance, 64-bit types are
+- * available on VBCC but seem to misbehave.
+- */
+-#if defined(DUK_F_HAVE_64BIT) && !defined(DUK_F_VBCC)
+-#define DUK_USE_64BIT_OPS
+-#else
++/* We do not use 64-bit integers for now, as they seems to be broken */
+ #undef DUK_USE_64BIT_OPS
+-#endif
+ 
+ /*
+  *  Alignment requirement and support for unaligned accesses
