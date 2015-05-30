@@ -13,10 +13,6 @@ Dependencies
 
 This layer depends on poky, so start from there.
 
-Patches
-=======
-
-Please submit any patches against the tiny-js layer to Johan Thelin <e8johan@gmail.com>
 
 
 Table of Contents
