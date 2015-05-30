@@ -1,7 +1,11 @@
-This README file contains information on the contents of the
-tinyjs layer.
+# tiny-js
 
-Please see the corresponding sections below for details.
+tiny-js is a minimalist, Linux-based, Javascript platform.
+
+It is built on the <a href="http://www.yoctoproject.org/">Yocto project</a> and <a href="http://duktape.org/">duktape</a>.
+
+The roadmap for the project can be found at <a href="https://trello.com/b/vxPSE5gv/tiny-js">trello</a>.
+
 
 
 Dependencies
@@ -12,19 +16,19 @@ This layer depends on poky, so start from there.
 Patches
 =======
 
-Please submit any patches against the tinyjs layer to Johan Thelin <e8johan@gmail.com>
+Please submit any patches against the tiny-js layer to Johan Thelin <e8johan@gmail.com>
 
 
 Table of Contents
 =================
 
-  I. Adding the tinyjs layer to your build
- II. Building a tinyjs image
-III. Running a tinyjs image
+- Adding the tinyjs layer to your build
+- Building a tinyjs image
+- Running a tinyjs image
 
 
-I. Adding the tinyjs layer to your build
-=================================================
+Adding the tinyjs layer to your build
+=====================================
 
 In order to use this layer, you need to make the build system aware of
 it.
@@ -44,13 +48,13 @@ other layers needed. e.g.:
 Also, set DISTRO = "tinyjs" in your local.conf.
 
 
-II. Building a tinyjs image
-===========================
+Building a tinyjs image
+=======================
 
 Use bitbake to build the tinyjs-image target.
 
-III. Running a tinyjs image
-===========================
+Running a tinyjs image
+======================
 
 Run using qemu, e.g.
 
